@@ -46,5 +46,6 @@ public class StepDefinitionImpl extends BaseTests {
         paymentPage.validateAddress("india");
         paymentPage.confirmOrder(string);
         System.out.println("End to End Automation Done!!!!!!!");
+        tearDown();
     }
 }

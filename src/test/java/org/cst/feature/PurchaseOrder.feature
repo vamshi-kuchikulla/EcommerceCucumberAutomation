@@ -4,7 +4,7 @@ Feature: Purchase the order form  ECommerce Website
   Background:
     Given I Landed on the ECommerce Page
 
-  @tag2
+  @Sanity
   Scenario Outline: Positive Test of Submitting the order
 
     Given  Logged in with username <userName> and password <password>
@@ -12,6 +12,6 @@ Feature: Purchase the order form  ECommerce Website
     And    Checkout <productName> and submit the order
     Then   "Thankyou for the order." message displayed on confirmationPage
 
-    Examples:
+    Examples: successful login
       | userName                    | password    | productName |
       | vamshi.kuchikulla@gmail.com | Vamshi@2151 | ZARA COAT 3 |
